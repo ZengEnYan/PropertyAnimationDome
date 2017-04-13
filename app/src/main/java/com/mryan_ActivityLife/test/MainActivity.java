@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //做透明动画,参数1:View,代表你要修改那个控件的属性. 参数2:propertyName代表实现什么样子的动画:"alpha",String类型.
                 //参数3:float... values,控件修改的参数,new float[]{0.0f, 0.2f, 0.4f, 0.6f, 0.8f, 1.0f}
                 ObjectAnimator alpha = ObjectAnimator.ofFloat(imageView, "alpha", new float[]{0.0f, 0.2f, 0.4f, 0.6f, 0.8f, 1.0f});
-                //设置动画执行时长.setDuration
+                //设置动画执行时长.setDuration   看我们需要的时长了
                 alpha.setDuration(2000);
                 //设置动画执行的模式setRepeatMode,参数用ObjectAnimator引用.
                 alpha.setRepeatMode(ObjectAnimator.RESTART);
